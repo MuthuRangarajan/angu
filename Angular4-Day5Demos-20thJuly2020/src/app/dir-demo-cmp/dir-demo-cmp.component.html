@@ -1,0 +1,24 @@
+<p>Demo For Directives</p>
+<hr/>
+<div *ngIf="sTrngFdk === 'Boring Training';else lrnTrng">Headache Started</div>
+<ng-template #lrnTrng>Learning Something in Angular From TT-CTE</ng-template>
+
+<ul>
+    <li *ngFor="let sModName of acModules">
+        {{sModName}}
+    </li>
+</ul>
+
+<div appNeedBreak></div>
+
+<div [ngSwitch]="sCourseDesc">
+    <div *ngSwitchCase = "'Mongo DB'">Document Oriented NoSQL Database</div>
+    <div *ngSwitchCase = "'Express JS'">Acts as a WebService Equivalent to Structs in J2EE framework</div>
+    <div *ngSwitchCase = "'Angular'">One of the JavaScript Framework developed by Google</div>
+    <div *ngSwitchCase = "'React'"> JavaScript Library developed by Facebook </div>
+    <div *ngSwitchCase = "'Node JS'"> JavaScript Runtime Environment</div>
+    <div *ngSwitchDefault> No idea </div>
+</div>
+<p>Outside ngSwitch</p>
+
+<input appCustomDir/>

@@ -1,0 +1,10 @@
+<h1>Demo for Pipes</h1>
+<hr/>
+
+Value of sBusinessUnit = {{sBusinessUnit|titlecase}} <br/>
+Value of sModuleName = {{sModuleName|uppercase}} <br/>
+Value of dDate = {{dDate|date: 'dd/MM/yy hh:mm'}} <br/>
+Value of dSalary = {{dSalary|currency:"USD":true:'5.0' }} <br/>
+Value of dNumber = {{dNumber|customPipes}} <br/>
+
+<button (click)="invokeMethod()">ClickMe</button>

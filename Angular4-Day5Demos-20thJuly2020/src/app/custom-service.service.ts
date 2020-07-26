@@ -1,0 +1,13 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CustomServiceService {
+
+  constructor() { }
+
+  dispDemo(){
+    console.log(' Inside dispDemo() ');
+  }
+}

@@ -1,0 +1,24 @@
+<!--
+<h1>Binding Demo</h1>
+<hr/>
+
+<!-- Data Binding -->
+<p>{{sTraining}}</p>
+
+<!-- Property Binding -->
+<input value={{sLearn}}/>
+<br/>
+
+<!-- Class Binding -->
+<p style.color='green'>Class Binding Demo</p>
+
+<!-- Event Binding -->
+<p (click)="alertDemo()">Enough of Theory</p>
+<br/>
+
+<!-- Twoway Binding -->
+<p>Status = {{sTrngStatus}}</p>
+<input [(ngModel)]="sTrngStatus"/>
+
+<!-- Extract content of the customized tag -->
+<ng-content></ng-content>

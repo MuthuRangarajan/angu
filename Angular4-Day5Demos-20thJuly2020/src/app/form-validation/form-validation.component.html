@@ -1,0 +1,23 @@
+<p>FormValidation Demo</p>
+<hr/>
+<form>
+    <div>
+        <input required minlength="3"
+               name="usrName" ngModel
+               #usrTxt='ngModel'
+               (change)="propMetInfo(usrTxt)"
+               />
+        <div *ngIf="usrTxt.touched && !usrTxt.valid">
+            <div class="alert alert-danger"
+                 *ngIf="usrTxt.errors.required"
+                >
+                Provide some info to UserName
+            </div>
+            <div class="alert alert-danger"
+                 *ngIf="usrTxt.errors.minlength"
+                >
+                UserName should have minimum 3 Characters
+            </div>            
+        </div>
+    </div>
+</form>

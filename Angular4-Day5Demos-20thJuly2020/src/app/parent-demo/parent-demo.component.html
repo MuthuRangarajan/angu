@@ -1,0 +1,6 @@
+<p>Inside ParentDemo Component</p>
+<hr/>
+<p>Recieve Info From Child Comonent : {{recievedData}}</p>
+<app-child-demo 
+    [datap2c]='sendData'
+    (objEventEmitter)='recievedData = $event'></app-child-demo>
